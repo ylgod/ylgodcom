@@ -108,7 +108,7 @@
 				<div class="content">
 					<div class="containe">
 						<input name="doplayers" type="button" id="doplayers1" class="btn btn-block btn-lg btn-success" value="会员视频地址（Ctrl+v粘贴网址）:" >
-						<input name="url" id="url" type="text" class="form-control" value="https://www.iqiyi.com/v_19rxket3eo.html" style="padding-top: 4px;" >		  
+						<input name="url" id="url" type="text" class="form-control" value="https://v.qq.com/x/cover/mzc002008tyzx0y/w0032n27ev8.html" style="padding-top: 4px;" >		  
 						<input name="doplayers" type="button" id="doplayers" class="btn btn-block btn-lg btn-success" value="立即播放" >
 					</div>
 					<div id="ckvip" style="position:relative;z-index:1000">
@@ -128,7 +128,7 @@
 							$('#url').focus();
 							return (false)
 						}
-						document.getElementById("vplay").src="https://api.bingdou.net/?url=" + a;
+						document.getElementById("vplay").src="https://cdn.yangju.vip/k/?url=" + a;
 
 					}
 
@@ -140,7 +140,7 @@
 							return (false)
 						}
 						var b = {
-						  f: 'https://api.bingdou.net/?url=' + a,
+						  f: 'https://cdn.yangju.vip/k/?url=' + a,
 							c: 0,
 							s: 2,
 							p: 1,
@@ -152,7 +152,7 @@
 							allowScriptAccess: 'always',
 							wmode: 'transparent'
 						};
-					  var d = ['https://api.bingdou.net/?url=' + a + '&mobile'];
+					  var d = ['https://cdn.yangju.vip/k/?url=' + a + '&mobile'];
 						var e = ['iPad', 'iPhone', 'ios', 'android+false', 'msie10+false'];
 						CKobject.embed('player/player.swf', 'ckplays', 'ckplayer_mains', '100%', '500', false, b, d, c)
 					}
